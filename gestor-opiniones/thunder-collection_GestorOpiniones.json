@@ -1,0 +1,269 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "GestorOpiniones",
+    "dateExported": "2024-03-01T13:50:49.278Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "dd888771-8da6-49a2-9a1d-d6ed650eaa42",
+            "name": "Comment",
+            "containerId": "",
+            "created": "2024-03-01T13:05:27.334Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "143d1c65-e00e-4ed7-85a6-2c75f9759417",
+            "name": "Post",
+            "containerId": "",
+            "created": "2024-03-01T13:05:35.182Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "c36752e6-4f69-467b-85b8-1cb84541e04e",
+            "name": "User",
+            "containerId": "",
+            "created": "2024-03-01T13:05:41.749Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "bad95537-8892-4a80-b8a9-bc0a548e0029",
+            "colId": "7870caf4-27fd-49db-8147-ceea7a7b6a47",
+            "containerId": "c36752e6-4f69-467b-85b8-1cb84541e04e",
+            "name": "register",
+            "url": "localhost:3056/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-01T13:07:42.833Z",
+            "modified": "2024-03-01T13:35:38.375Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "cvega-2022244"
+                    },
+                    {
+                        "name": "email",
+                        "value": "cvega-2022244@kinal.edu.gt"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "caacad3f-4743-4e74-926e-76dbfa1c26d8",
+            "colId": "7870caf4-27fd-49db-8147-ceea7a7b6a47",
+            "containerId": "c36752e6-4f69-467b-85b8-1cb84541e04e",
+            "name": "login",
+            "url": "localhost:3056/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-01T13:09:40.446Z",
+            "modified": "2024-03-01T13:35:54.353Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "cvega-2022244"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "eb9c7aa7-b7c3-473e-a382-6a2d2e59d359",
+            "colId": "7870caf4-27fd-49db-8147-ceea7a7b6a47",
+            "containerId": "143d1c65-e00e-4ed7-85a6-2c75f9759417",
+            "name": "editPost",
+            "url": "localhost:3056/post/editPost/65e1d8025802d57ed04fedcf",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-01T13:11:25.902Z",
+            "modified": "2024-03-01T13:36:03.497Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZDlhYTU4MDJkNTdlZDA0ZmVkZDYiLCJ1c2VybmFtZSI6ImN2ZWdhLTIwMjIyNDQiLCJlbWFpbCI6ImN2ZWdhLTIwMjIyNDRAa2luYWwuZWR1Lmd0IiwiaWF0IjoxNzA5MzAwMTU0LCJleHAiOjE3MDkzMTA5NTR9.aGor2Op_w7U9hRKL5demgvza8iDrN_p61t3UHXtGmaY"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "Viaje con mis hermanos"
+                    },
+                    {
+                        "name": "category",
+                        "value": "Aventuras"
+                    },
+                    {
+                        "name": "content",
+                        "value": "El mejor viaje de mi vida"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "78860f76-4d53-43fc-9d89-300a56327c2e",
+            "colId": "7870caf4-27fd-49db-8147-ceea7a7b6a47",
+            "containerId": "143d1c65-e00e-4ed7-85a6-2c75f9759417",
+            "name": "deletePost",
+            "url": "localhost:3056/post/deletePost/65e0a0d461a3e80cd84069ec",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-03-01T13:26:26.537Z",
+            "modified": "2024-03-01T13:36:08.540Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZDlhYTU4MDJkNTdlZDA0ZmVkZDYiLCJ1c2VybmFtZSI6ImN2ZWdhLTIwMjIyNDQiLCJlbWFpbCI6ImN2ZWdhLTIwMjIyNDRAa2luYWwuZWR1Lmd0IiwiaWF0IjoxNzA5MzAwMTU0LCJleHAiOjE3MDkzMTA5NTR9.aGor2Op_w7U9hRKL5demgvza8iDrN_p61t3UHXtGmaY"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4c55cdd2-ea31-45a9-a819-011f641b8691",
+            "colId": "7870caf4-27fd-49db-8147-ceea7a7b6a47",
+            "containerId": "143d1c65-e00e-4ed7-85a6-2c75f9759417",
+            "name": "createPost",
+            "url": "localhost:3056/post/createPost",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-03-01T13:27:11.402Z",
+            "modified": "2024-03-01T13:36:16.091Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZDlhYTU4MDJkNTdlZDA0ZmVkZDYiLCJ1c2VybmFtZSI6ImN2ZWdhLTIwMjIyNDQiLCJlbWFpbCI6ImN2ZWdhLTIwMjIyNDRAa2luYWwuZWR1Lmd0IiwiaWF0IjoxNzA5MzAwMTU0LCJleHAiOjE3MDkzMTA5NTR9.aGor2Op_w7U9hRKL5demgvza8iDrN_p61t3UHXtGmaY"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "Viaje con mis hermano"
+                    },
+                    {
+                        "name": "category",
+                        "value": "Aventuras"
+                    },
+                    {
+                        "name": "content",
+                        "value": "El mejor viaje de mi vida"
+                    },
+                    {
+                        "name": "user",
+                        "value": "65e1d36919da44281b1bece1"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "0c878767-fa30-40fc-a5f7-fbabf03868b1",
+            "colId": "7870caf4-27fd-49db-8147-ceea7a7b6a47",
+            "containerId": "dd888771-8da6-49a2-9a1d-d6ed650eaa42",
+            "name": "createComment",
+            "url": "localhost:3056/comment/createComment",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-03-01T13:37:40.190Z",
+            "modified": "2024-03-01T13:43:31.904Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZDlhYTU4MDJkNTdlZDA0ZmVkZDYiLCJ1c2VybmFtZSI6ImN2ZWdhLTIwMjIyNDQiLCJlbWFpbCI6ImN2ZWdhLTIwMjIyNDRAa2luYWwuZWR1Lmd0IiwiaWF0IjoxNzA5MzAwMTU0LCJleHAiOjE3MDkzMTA5NTR9.aGor2Op_w7U9hRKL5demgvza8iDrN_p61t3UHXtGmaY"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "text",
+                        "value": "Que foto mas horrible!!!"
+                    },
+                    {
+                        "name": "post",
+                        "value": "65e1d8025802d57ed04fedcf"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "3406db60-194b-4443-8d3b-7f1f7bc48dac",
+            "colId": "7870caf4-27fd-49db-8147-ceea7a7b6a47",
+            "containerId": "dd888771-8da6-49a2-9a1d-d6ed650eaa42",
+            "name": "editComment",
+            "url": "localhost:3056/comment/editComment/65e1db835802d57ed04fede3",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2024-03-01T13:37:57.788Z",
+            "modified": "2024-03-01T13:45:05.477Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZDlhYTU4MDJkNTdlZDA0ZmVkZDYiLCJ1c2VybmFtZSI6ImN2ZWdhLTIwMjIyNDQiLCJlbWFpbCI6ImN2ZWdhLTIwMjIyNDRAa2luYWwuZWR1Lmd0IiwiaWF0IjoxNzA5MzAwMTU0LCJleHAiOjE3MDkzMTA5NTR9.aGor2Op_w7U9hRKL5demgvza8iDrN_p61t3UHXtGmaY"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "text",
+                        "value": "Que foto mas hermosa!!!"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "696141eb-bb98-4a52-9384-b07c6ccf35b2",
+            "colId": "7870caf4-27fd-49db-8147-ceea7a7b6a47",
+            "containerId": "dd888771-8da6-49a2-9a1d-d6ed650eaa42",
+            "name": "deleteComment",
+            "url": "localhost:3056/comment/deleteComment/65e1db835802d57ed04fede3",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2024-03-01T13:38:08.172Z",
+            "modified": "2024-03-01T13:45:35.740Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZDlhYTU4MDJkNTdlZDA0ZmVkZDYiLCJ1c2VybmFtZSI6ImN2ZWdhLTIwMjIyNDQiLCJlbWFpbCI6ImN2ZWdhLTIwMjIyNDRAa2luYWwuZWR1Lmd0IiwiaWF0IjoxNzA5MzAwMTU0LCJleHAiOjE3MDkzMTA5NTR9.aGor2Op_w7U9hRKL5demgvza8iDrN_p61t3UHXtGmaY"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
